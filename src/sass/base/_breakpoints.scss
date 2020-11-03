@@ -1,0 +1,17 @@
+// BREAKPOINTS
+$bp-tablet-large: 1150px;
+$bp-tablet: 1000px;
+$bp-mobile: 800px;
+$bp-mobile-small: 450px;
+
+@mixin tablet {
+	@media (max-width: #{$bp-tablet}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$bp-mobile}) {
+		@content;
+	}
+}

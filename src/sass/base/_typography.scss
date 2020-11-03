@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: 0.1rem;
+}
+
+p,
+a {
+	font-size: 1.4rem;
+	color: $c-white-dull;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.2s opacity ease-in-out;
+
+	&:hover,
+	:focus {
+		opacity: 0.6
+	}
+}
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	line-height: 1.5;
+}
