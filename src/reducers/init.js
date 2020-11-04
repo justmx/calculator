@@ -1,5 +1,4 @@
 import { SET_HISTROY_DATA, CLEAR_HISTROY_DATA } from '../actions/init';
-import { checkHistoryExists, setLocalHistory } from '../utitls/helper';
 
 let initialState = {
 	histroy_records: [],

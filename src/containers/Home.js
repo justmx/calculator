@@ -47,7 +47,7 @@ class Calculator extends React.Component {
 	    console.log(equation)
   	} else if (['+', '-', 'x', '/', '%'].indexOf(value) !== -1) {
   		if(value === 'x') {
-  			equation += ' ' + '*' + ' ';
+  			equation += ' * ';
   		} else {
   			equation += ' ' + value + ' ';
   		}
@@ -55,6 +55,7 @@ class Calculator extends React.Component {
     } else if (value === '=') {
       try {
         // console.log(equation)
+        // eslint-disable-next-line
         const evalResult = eval(equation);
         result = Number.isInteger(evalResult)? evalResult : evalResult.toFixed(2);
         next = 0;
