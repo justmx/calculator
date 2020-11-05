@@ -38,7 +38,7 @@ const Calculator = ({removeHistory, addRecord, records}) => {
 	    if (next !== 0) {
 	    	newNext = -1 * parseFloat(next);
 	    }
-	    newEquation = equation.replace(/(\d+)(?!.*\d)/g, `(${next})`);
+	    newEquation = equation.replace(/(\d+)(?!.*\d)/g, `(${newNext})`);
   	} else if (['+', '-', 'x', '/', '%'].indexOf(value) !== -1) {
   		if(value === 'x') {
   			newEquation += ' * ';
