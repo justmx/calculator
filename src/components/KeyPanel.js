@@ -1,8 +1,7 @@
 import React from 'react';
 import Button from "./Button";
-import {left_data , right_data} from '../utitls/data';
 
-const KeyPanel = ({onClick, content}) => {
+const KeyPanel = ({onClick, content, left_data, right_data}) => {
   return (
      <div className='calculator'>
         <div className='display'>

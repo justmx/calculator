@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Button = ({content, onClick, left}) => {	
+const Button = ({content, onClick, left}) => {
+	if(!content) return null;
 	const containStyle = left ? ['circle-holder-left'] : ['circle-holder-right'];
 	const style = ['circle'];
 	if(content.double){

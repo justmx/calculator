@@ -5,7 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 import TrackerWrapper from './containers/TrackerWrapper';
-import Home from './containers/Home';
+import HomePage from './containers/HomePage';
 
 const App = () => (
   <Router>
@@ -14,7 +14,7 @@ const App = () => (
         <Route
           exact
           path="/"
-          component={Home}
+          component={HomePage}
         />
     </Switch>
     </TrackerWrapper>

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render content 1`] = `
+<div
+  className="circle-holder-right"
+  onClick={[Function]}
+>
+  <div
+    className="circle"
+    style={
+      Object {
+        "background": "#ffffff",
+      }
+    }
+  >
+    1
+  </div>
+</div>
+`;

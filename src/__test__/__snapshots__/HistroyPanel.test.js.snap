@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistroyPanel should render HistroyPanel 1`] = `
+<div
+  className="histrory-container"
+>
+  <div
+    className="histrory-container-header"
+  >
+    <h3>
+      History
+    </h3>
+    <button
+      className="clear-button"
+      onClick={[Function]}
+    >
+       Clear All History 
+    </button>
+  </div>
+  <div
+    className="histrory-container-inner"
+  >
+    <p
+      className="record-item"
+      key="0"
+    >
+      1 + 1 = 2
+    </p>
+    <p
+      className="record-item"
+      key="1"
+    >
+      1 + 2 = 3
+    </p>
+    <p
+      className="record-item"
+      key="2"
+    >
+      1 x 1 = 1
+    </p>
+  </div>
+</div>
+`;

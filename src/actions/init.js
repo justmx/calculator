@@ -4,23 +4,23 @@ import { checkHistoryExists, setLocalHistory } from '../utitls/helper';
 export const SET_HISTROY_DATA = 'SET_HISTROY_DATA';
 export const CLEAR_HISTROY_DATA = 'CLEAR_HISTROY_DATA';
 
-export const setHistroyData = histroy_records => ({
+export const setHistroyData = histroyRecords => ({
 	type: SET_HISTROY_DATA,
-	histroy_records,
+	histroyRecords,
 });
 
 export const initHistory = () => async dispatch => {
-	const histroy_records = await checkHistoryExists();
-	if(!isEmpty(histroy_records)) {
-		dispatch(setHistroyData(histroy_records));
+	const histroyRecords = await checkHistoryExists();
+	if(!isEmpty(histroyRecords)) {
+		dispatch(setHistroyData(histroyRecords));
 	}
 };
 
 export const addHistoryRecord = item => async dispatch => {
-	const histroy_records = await checkHistoryExists();
-	const new_records = histroy_records.concat(item);
-	setLocalHistory(new_records);
-	dispatch(setHistroyData(new_records));
+	const histroyRecords = await checkHistoryExists();
+	const newRecords = histroyRecords.concat(item);
+	setLocalHistory(newRecords);
+	dispatch(setHistroyData(newRecords));
 };
 
 export const removeAllHistory = () => dispatch => {

@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyPanel should render KeyPanel 1`] = `
+<div
+  className="calculator"
+>
+  <div
+    className="display"
+  />
+  <div
+    className="calculator-container"
+  >
+    <div
+      className="flex-row-between left"
+    >
+      <Button
+        content={
+          Object {
+            "content": "(",
+          }
+        }
+        key="0"
+        left={true}
+      />
+      <Button
+        content={
+          Object {
+            "content": ")",
+          }
+        }
+        key="1"
+        left={true}
+      />
+      <Button
+        content={
+          Object {
+            "content": "mc",
+          }
+        }
+        key="2"
+        left={true}
+      />
+      <Button
+        content={
+          Object {
+            "content": "m+",
+          }
+        }
+        key="3"
+        left={true}
+      />
+      <Button
+        content={
+          Object {
+            "content": "m-",
+          }
+        }
+        key="4"
+        left={true}
+      />
+      <Button
+        content={
+          Object {
+            "content": "mr",
+          }
+        }
+        key="5"
+        left={true}
+      />
+    </div>
+    <div
+      className="flex-row-between right"
+    >
+      <Button
+        content={
+          Object {
+            "colour": "#a4a4a4",
+            "content": "C",
+          }
+        }
+        key="0"
+      />
+      <Button
+        content={
+          Object {
+            "colour": "#a4a4a4",
+            "content": "+/-",
+          }
+        }
+        key="1"
+      />
+      <Button
+        content={
+          Object {
+            "colour": "#a4a4a4",
+            "content": "%",
+          }
+        }
+        key="2"
+      />
+      <Button
+        content={
+          Object {
+            "colour": "#e49425",
+            "content": "/",
+          }
+        }
+        key="3"
+      />
+      <Button
+        content={
+          Object {
+            "colour": "#363636",
+            "content": "7",
+          }
+        }
+        key="4"
+      />
+    </div>
+  </div>
+</div>
+`;
