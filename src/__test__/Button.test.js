@@ -12,8 +12,8 @@ const contentZero = {
 
 describe('Button', () => {
   it('should render content', () => {
-    const button = shallow(<Button content={content} />);
-    expect(button).toMatchSnapshot();
+    const wrapper = shallow(<Button content={content} />);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render button with a double class', () => {
@@ -22,8 +22,8 @@ describe('Button', () => {
   });
 
   it('should fire a function when click', () => {
-	  const button = shallow(<Button content={content} onClick={clickFn} />);
-	  button
+	  const wrapper = shallow(<Button content={content} onClick={clickFn} />);
+	  wrapper
 	    .find('.circle-holder-right')
 	    .simulate('click');
 	 expect(clickFn).toHaveBeenCalled();

@@ -35,13 +35,13 @@ const right_data = [
 
 describe('KeyPanel', () => {
   it('should render KeyPanel', () => {
-    const keyPanel = shallow(<KeyPanel left_data={left_data} right_data={right_data}/>);
-    expect(keyPanel).toMatchSnapshot();
+    const wrapper = shallow(<KeyPanel left_data={left_data} right_data={right_data}/>);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders Buttons', () => {
-    const keyPanel = shallow(<KeyPanel left_data={left_data} right_data={right_data}/>);
-    expect(keyPanel.find('Button')).toBeDefined();
-    expect(keyPanel.find('Button')).toHaveLength(left_data.length + right_data.length);
+    const wrapper = shallow(<KeyPanel left_data={left_data} right_data={right_data}/>);
+    expect(wrapper.find('Button')).toBeDefined();
+    expect(wrapper.find('Button')).toHaveLength(left_data.length + right_data.length);
   });
 });

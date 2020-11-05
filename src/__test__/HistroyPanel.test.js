@@ -8,13 +8,13 @@ const records = [
 
 describe('HistroyPanel', () => {
   it('should render HistroyPanel', () => {
-    const histroyPanel = shallow(<HistroyPanel records={records} />);
-    expect(histroyPanel).toMatchSnapshot();
+    const wrapper = shallow(<HistroyPanel records={records} />);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders record items', () => {
-    const histroyPanel = shallow(<HistroyPanel records={records} />);
-    expect(histroyPanel.find('.record-item')).toBeDefined();
-    expect(histroyPanel.find('.record-item')).toHaveLength(records.length);
+    const wrapper = shallow(<HistroyPanel records={records} />);
+    expect(wrapper.find('.record-item')).toBeDefined();
+    expect(wrapper.find('.record-item')).toHaveLength(records.length);
   });
 });

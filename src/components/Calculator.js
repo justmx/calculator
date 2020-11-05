@@ -3,7 +3,7 @@ import HistroyPanel from "../components/HistroyPanel";
 import KeyPanel from "../components/KeyPanel";
 import {left_data , right_data} from '../utitls/data';
 
-const Calculator = ({removeAllHistory, addHistoryRecord, histroyRecords}) => {
+const Calculator = ({removeHistory, addRecord, records}) => {
 
   const [equation, setEquation] = useState('');
   const [result, setResult] = useState(0)
@@ -17,7 +17,7 @@ const Calculator = ({removeAllHistory, addHistoryRecord, histroyRecords}) => {
 
   const clearAll = () => {
     clear();
-    removeAllHistory();
+    removeHistory();
   }
 
   const onClick = value => {
@@ -51,7 +51,7 @@ const Calculator = ({removeAllHistory, addHistoryRecord, histroyRecords}) => {
       const evalResult = eval(equation);
       newResult = Number.isInteger(evalResult)? evalResult : evalResult.toFixed(2);
       const equation_list = `${equation} = ${newResult}`;
-      addHistoryRecord(equation_list);
+      addRecord(equation_list);
       newEquation = '';
       newNext = 0;
     } else {
@@ -73,7 +73,7 @@ const Calculator = ({removeAllHistory, addHistoryRecord, histroyRecords}) => {
             right_data={right_data}
           />
           <HistroyPanel 
-            records={histroyRecords} 
+            records={records} 
             clearAll={clearAll}
           />
       </div>

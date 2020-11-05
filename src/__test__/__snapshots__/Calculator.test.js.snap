@@ -1,37 +1,1504 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Calculator should render Calculator 1`] = `
-<ContextProvider
-  value={
-    Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-      "subscription": Subscription {
-        "handleChangeWrapper": [Function],
-        "listeners": Object {
-          "notify": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
-          "clearActions": [Function],
-          "dispatch": [Function],
-          "getActions": [Function],
-          "getState": [Function],
-          "replaceReducer": [Function],
-          "subscribe": [Function],
-        },
-        "unsubscribe": null,
-      },
-    }
-  }
+<Calculator
+  addRecord={[MockFunction]}
+  records={Array []}
+  removeHistory={[MockFunction]}
 >
-  <Calculator />
-</ContextProvider>
+  <div
+    className="calculator-container"
+  >
+    <KeyPanel
+      content={0}
+      left_data={
+        Array [
+          "(",
+          ")",
+          "mc",
+          "m+",
+          "m-",
+          "mr",
+          "2nd",
+          "x2",
+          "x3",
+          "xy",
+          "yx",
+          "2x",
+          "1/x",
+          ")",
+          "mc",
+          "m+",
+          "logy",
+          "log2",
+          "x!",
+          "sin",
+          "cos",
+          "tan",
+          "e",
+          "EE",
+          "Rad",
+          "sinh",
+          "Cosh",
+          "tanh",
+          "π",
+          "Rand",
+        ]
+      }
+      onClick={[Function]}
+      right_data={
+        Array [
+          Object {
+            "colour": "#a4a4a4",
+            "content": "C",
+          },
+          Object {
+            "colour": "#a4a4a4",
+            "content": "+/-",
+          },
+          Object {
+            "colour": "#a4a4a4",
+            "content": "%",
+          },
+          Object {
+            "colour": "#e49425",
+            "content": "/",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "7",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "8",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "9",
+          },
+          Object {
+            "colour": "#e49425",
+            "content": "x",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "4",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "5",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "6",
+          },
+          Object {
+            "colour": "#e49425",
+            "content": "-",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "1",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "2",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "3",
+          },
+          Object {
+            "colour": "#e49425",
+            "content": "+",
+          },
+          Object {
+            "colour": "#363636",
+            "content": "0",
+            "double": true,
+          },
+          Object {
+            "colour": "#363636",
+            "content": ".",
+          },
+          Object {
+            "colour": "#e49425",
+            "content": "=",
+          },
+        ]
+      }
+    >
+      <div
+        className="calculator"
+      >
+        <div
+          className="display"
+        >
+          0
+        </div>
+        <div
+          className="calculator-container"
+        >
+          <div
+            className="flex-row-between left"
+          >
+            <Button
+              content={
+                Object {
+                  "content": "(",
+                }
+              }
+              key="0"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="("
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  (
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": ")",
+                }
+              }
+              key="1"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid=")"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  )
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "mc",
+                }
+              }
+              key="2"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="mc"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  mc
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "m+",
+                }
+              }
+              key="3"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="m+"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  m+
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "m-",
+                }
+              }
+              key="4"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="m-"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  m-
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "mr",
+                }
+              }
+              key="5"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="mr"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  mr
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "2nd",
+                }
+              }
+              key="6"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="2nd"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  2nd
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "x2",
+                }
+              }
+              key="7"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="x2"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  x2
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "x3",
+                }
+              }
+              key="8"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="x3"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  x3
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "xy",
+                }
+              }
+              key="9"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="xy"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  xy
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "yx",
+                }
+              }
+              key="10"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="yx"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  yx
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "2x",
+                }
+              }
+              key="11"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="2x"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  2x
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "1/x",
+                }
+              }
+              key="12"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="1/x"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  1/x
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": ")",
+                }
+              }
+              key="13"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid=")"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  )
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "mc",
+                }
+              }
+              key="14"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="mc"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  mc
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "m+",
+                }
+              }
+              key="15"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="m+"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  m+
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "logy",
+                }
+              }
+              key="16"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="logy"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  logy
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "log2",
+                }
+              }
+              key="17"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="log2"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  log2
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "x!",
+                }
+              }
+              key="18"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="x!"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  x!
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "sin",
+                }
+              }
+              key="19"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="sin"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  sin
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "cos",
+                }
+              }
+              key="20"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="cos"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  cos
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "tan",
+                }
+              }
+              key="21"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="tan"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  tan
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "e",
+                }
+              }
+              key="22"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="e"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  e
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "EE",
+                }
+              }
+              key="23"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="EE"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  EE
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "Rad",
+                }
+              }
+              key="24"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="Rad"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  Rad
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "sinh",
+                }
+              }
+              key="25"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="sinh"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  sinh
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "Cosh",
+                }
+              }
+              key="26"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="Cosh"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  Cosh
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "tanh",
+                }
+              }
+              key="27"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="tanh"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  tanh
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "π",
+                }
+              }
+              key="28"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="π"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  π
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "content": "Rand",
+                }
+              }
+              key="29"
+              left={true}
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-left"
+                data-testid="Rand"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  Rand
+                </div>
+              </div>
+            </Button>
+          </div>
+          <div
+            className="flex-row-between right"
+          >
+            <Button
+              content={
+                Object {
+                  "colour": "#a4a4a4",
+                  "content": "C",
+                }
+              }
+              key="0"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="C"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#a4a4a4",
+                    }
+                  }
+                >
+                  C
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#a4a4a4",
+                  "content": "+/-",
+                }
+              }
+              key="1"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="+/-"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#a4a4a4",
+                    }
+                  }
+                >
+                  +/-
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#a4a4a4",
+                  "content": "%",
+                }
+              }
+              key="2"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="%"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#a4a4a4",
+                    }
+                  }
+                >
+                  %
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#e49425",
+                  "content": "/",
+                }
+              }
+              key="3"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="/"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#e49425",
+                    }
+                  }
+                >
+                  /
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "7",
+                }
+              }
+              key="4"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="7"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  7
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "8",
+                }
+              }
+              key="5"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="8"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  8
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "9",
+                }
+              }
+              key="6"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="9"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  9
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#e49425",
+                  "content": "x",
+                }
+              }
+              key="7"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="x"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#e49425",
+                    }
+                  }
+                >
+                  x
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "4",
+                }
+              }
+              key="8"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="4"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  4
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "5",
+                }
+              }
+              key="9"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="5"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  5
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "6",
+                }
+              }
+              key="10"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="6"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  6
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#e49425",
+                  "content": "-",
+                }
+              }
+              key="11"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="-"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#e49425",
+                    }
+                  }
+                >
+                  -
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "1",
+                }
+              }
+              key="12"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="1"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  1
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "2",
+                }
+              }
+              key="13"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="2"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  2
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "3",
+                }
+              }
+              key="14"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="3"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  3
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#e49425",
+                  "content": "+",
+                }
+              }
+              key="15"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="+"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#e49425",
+                    }
+                  }
+                >
+                  +
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": "0",
+                  "double": true,
+                }
+              }
+              key="16"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right double"
+                data-testid="0"
+                onClick={[Function]}
+              >
+                <div
+                  className="circle double"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  0
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#363636",
+                  "content": ".",
+                }
+              }
+              key="17"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="."
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#363636",
+                    }
+                  }
+                >
+                  .
+                </div>
+              </div>
+            </Button>
+            <Button
+              content={
+                Object {
+                  "colour": "#e49425",
+                  "content": "=",
+                }
+              }
+              key="18"
+              onClick={[Function]}
+            >
+              <div
+                className="circle-holder-right"
+                data-testid="="
+                onClick={[Function]}
+              >
+                <div
+                  className="circle"
+                  style={
+                    Object {
+                      "background": "#e49425",
+                    }
+                  }
+                >
+                  =
+                </div>
+              </div>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </KeyPanel>
+    <HistroyPanel
+      clearAll={[Function]}
+      records={Array []}
+    >
+      <div
+        className="histrory-container"
+      >
+        <div
+          className="histrory-container-header"
+        >
+          <h3>
+            History
+          </h3>
+          <button
+            className="clear-button"
+            onClick={[Function]}
+          >
+             Clear All History 
+          </button>
+        </div>
+        <div
+          className="histrory-container-inner"
+        />
+      </div>
+    </HistroyPanel>
+  </div>
+</Calculator>
 `;

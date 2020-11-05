@@ -18,9 +18,9 @@ const HomePage = () => {
   return (
     <div className="home">
       <Calculator 
-        removeAllHistory={() => dispatch(removeAllHistory())}
-        addHistoryRecord={(item) => dispatch(addHistoryRecord(item))}
-        histroyRecords={histroyRecords}
+        removeHistory={() => dispatch(removeAllHistory())}
+        addRecord={(item) => dispatch(addHistoryRecord(item))}
+        records={histroyRecords}
       />
     </div>
   )

@@ -10,7 +10,7 @@ const Button = ({content, onClick, left}) => {
 	}
 
 	return (
-		<div onClick={() => onClick(content.content)} className={containStyle.join(' ')} >
+		<div onClick={() => onClick(content.content)} className={containStyle.join(' ')} data-testid={content.content}>
 			<div className={style.join(' ')} 
 				style={{background: content.colour || '#363636'}}>{content.content}</div>
 		</div>

@@ -3,6 +3,7 @@
 exports[`Button should render content 1`] = `
 <div
   className="circle-holder-right"
+  data-testid="1"
   onClick={[Function]}
 >
   <div
